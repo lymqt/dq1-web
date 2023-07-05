@@ -28,5 +28,26 @@
     <canvas width="960" height="640" id="core"></canvas>
     <button id="testBtn">播放音乐</button>
 <!--    <script type="module" src="src/main.ts"></script> -->
+    <script>
+    var canvas = document.getElementById('core');  
+  
+// 添加触摸事件监听器  
+canvas.addEventListener('touchstart', function(event) {  
+  // 阻止默认的触摸事件行为  
+  event.preventDefault();  
+  
+  // 获取触摸点的位置  
+  var touch = event.touches[0];  
+  
+  // 根据触摸点的位置模拟按键消息  
+  if (touch.x < canvas.width / 3) {  
+    console.log("left");
+  } else if (touch.x >= canvas.width / 3 && touch.x < canvas.width * 2 / 3) {  
+    console.log("right");
+  } else {  
+    console.log("j");
+  }  
+});
+    </script>
   </body>
 </html>
