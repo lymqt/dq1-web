@@ -45,6 +45,7 @@ canvas.addEventListener('touchstart', function(event) {
   } else if (touch.x >= canvas.width / 3 && touch.x < canvas.width * 2 / 3) {  
     console.log("right");
   } else {  
+    window.dispatchEvent(new KeyboardEvent('keydown',{key:'j'}));
     console.log("j");
   }  
 });
