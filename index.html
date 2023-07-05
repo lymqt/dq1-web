@@ -7,7 +7,7 @@
     <title>DQ1</title>
     <script type="module" crossorigin="" src="index.b496b00a.js"></script>
     <link rel="stylesheet" href="index.eb6deaf2.css">
-   <script src="https://unpkg.com/eruda@2.4.1/eruda.js"></script>
+   <script src="https://unpkg.com/eruda@3.0.0/eruda.js"></script>
   <script>
  
     eruda.init();
@@ -45,7 +45,7 @@ canvas.addEventListener('touchstart', function(event) {
   } else if (touch.x >= canvas.width / 3 && touch.x < canvas.width * 2 / 3) {  
     console.log("right");
   } else {  
-    window.dispatchEvent(new KeyboardEvent('keydown',{key:'j'}));
+    window.dispatchEvent(new KeyboardEvent('keydown',{key:'j',keycode:106}));
     console.log("j");
   }  
 });
