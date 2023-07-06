@@ -8,6 +8,7 @@
     <script type="module" crossorigin="" src="index.b496b00a.js"></script>
     <link rel="stylesheet" href="index.eb6deaf2.css">
    <script src="https://unpkg.com/eruda@3.0.0/eruda.js"></script>
+    <script src="https://unpkg.com/jquery@3.7.0/dist/jquery.js"></script>
   <script>
  
     eruda.init();
@@ -29,6 +30,13 @@
     <button id="testBtn">播放音乐</button>
 <!--    <script type="module" src="src/main.ts"></script> -->
     <script>
+      //触发键盘
+            $("#core").on("touchstart", function () {
+                $(this).focus();
+            })
+
+            $("#core").trigger("touchstart");
+      /*
     var canvas = document.getElementById('core');  
   
 // 添加触摸事件监听器  
@@ -49,6 +57,7 @@ canvas.addEventListener('touchstart', function(event) {
     console.log("j");
   }  
 });
+      */
     </script>
   </body>
 </html>
