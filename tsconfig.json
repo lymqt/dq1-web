@@ -24,6 +24,6 @@
       "@assets/*": ["./public/assets/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src","src/types/data.d.ts","src/types/vite-env.d.ts"],
   "exclude": ["node_modules", "dist", "src/data/events"]
 }
